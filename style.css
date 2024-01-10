@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #fdfdfd;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .toggle-btn {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #000000;
+    margin: 3px 0;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .toggle-btn {
+      display: flex;
+    }
+  }
+  
