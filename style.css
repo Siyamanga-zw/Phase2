@@ -6,7 +6,9 @@ body {
   
   header {
     background-color: #fdfdfd;
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +38,7 @@ body {
  
   /* hero */
   .hero {
+    margin-top: 0px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -77,7 +80,6 @@ body {
     padding-left :10%;
     position: absolute;
     width: 80%;
- 
     overflow: hidden;
   }
 
@@ -89,9 +91,7 @@ body {
 
   img {
     width: 100%;
-    height: auto;
-    height: 400px;
-
+    height:500px;
   }
 
   .arrow {
@@ -138,6 +138,61 @@ body {
     .right p {
       margin: 10px;
     }
+  }
+  /* container-text */
+  #sub-hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    
+  }
+
+  .container-text {
+    display: flex;
+    width: 100%;
+  }
+
+  .text1 {
+    width:62%;
+    /* flex: -1; */
+    /* width:300px; */
+  }
+
+  .image-svg {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    /* padding-right: 20px; */
+  }
+
+  .image-svg span {
+    font-family: calibri;
+    font-size: 39pt;
+    color: #2679AB;
+    align-self: last baseline;
+    margin: 0 4px;
+  }
+
+  /* Create a "c" faced up */
+  .image-svg span:nth-child(7) {
+    /* transform: scaleY(-1); */
+    rotate: 90deg;
+    display: inline-block; 
+  }
+
+  /* Create a semi-circle down */
+  .image-svg span:nth-child(5) {
+    /* transform: scaleY(-1); */
+    rotate: 270deg;
+    display: inline-block;
+
+  }
+
+  .image-svg{
+    height:100px;
+    /* width:55%; */
+    margin-top: -50px;
   }
   /* boxes */
  
@@ -187,4 +242,7 @@ body {
     gap:10px;
    
   
+  }
+  .foot{
+    height:200px;
   }
