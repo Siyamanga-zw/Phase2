@@ -3,7 +3,7 @@ $(document).ready(function() {
   const totalImages = $(".slider img").length;
   let currentIndex = 0;
 
-  // Create bubbles
+
   for (let i = 0; i < totalImages; i++) {
     $(".bubbles").append('<div class="bubble"></div>');
   }
@@ -21,8 +21,8 @@ $(document).ready(function() {
   });
 
   function updateSlider() {
-    const translateValue = currentIndex * -100 + "%";
-    slider.css("transform", "translateX(" + translateValue + ")");
+    $(".slider img").hide();
+    $(".slider img:eq(" + currentIndex + ")").show();
   }
 
   function updateBubbles() {
@@ -30,7 +30,6 @@ $(document).ready(function() {
     $(".bubble:eq(" + currentIndex + ")").addClass("active");
   }
 
-  // Initially hide all images except the first one
   $(".slider img").hide();
   $(".slider img:eq(" + currentIndex + ")").show();
 });
